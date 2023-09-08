@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    overflow-x: hidden;
+}
+    body{
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+}
+@media (min-width:320px){
+    .backdrop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,.9);
+        z-index: 1;
+    }
+    .wriper-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999999;
+        transform: scale(0);
+        transition: .3s ease-in-out;
+    }
+    .wriper-popup.show {
+        transform: scale(1);
+
+    }
+    
+  
+    .content-popup  {
+        color: #000;
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
+        width: 90%;
+        padding: 30px 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+   
+    button.btn-black {
+    background-color: #262626;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.welcome.seaction_left {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.welcome.seaction_left article {
+    margin: 15px 0;
+}
+
+.welcome.seaction_left article {
+    margin: 15px 0;
+}
+
+.welcome.seaction_right img {
+    box-shadow: -1px 2px 2px rgb(0,0,0,.50%);
+    border-radius: 15px;
+}
+
+.welcome.seaction_right img {
+    box-shadow: 1px 9px 6px 3px rgb(0,0,0,.5);
+    border-radius: 15px;
+}
+
+img {
+    border-radius: 15px;
+}
+    .welcome.seaction {
+        width: 80%;
+        margin: 40px auto;
+        background: #099A3C url(../img/pattern-bg.png)no-repeat center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    }
+    
+    p {
+        margin-bottom: 15px;
+    }
+    
+    p:last-child {
+        margin-bottom: 0;
+    }
+    
+   
+    .hero-hadits {
+        background-color: #262626;
+        color: #fff;
+        text-align: center;
+        width: 300px;
+        border-radius: 15px;
+        margin: -75px auto 0;
+        z-index: 9999;
+        position: relative;
+        padding: 28px;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+    
+    .hero-hadits img {
+        position: absolute;
+        width: 37px;
+        z-index: 999999;
+    }
+    
+    img.quote.left {
+        top: -10px;
+        left: 18px;
+    }
+    
+    img.quote.right {
+        bottom: -10px;
+        right: 18px;
+    }
+    .d-none{
+        display: none !important;
+    }
+    .text-hero h6{
+        font-weight: 400;
+    }
+    .swiper-slide:before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: rgba(0,0,0,.5);
+    }
+    .text-hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    color: #fff;
+    text-align: center;
+    transform: translate(-90px, -50px);
+}
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-slide {
+        height: 400px;
+        background-color: gray;
+    }
+    .hamburger svg {
+        width: 40px;
+    }
+    
+    .hamburger {
+        cursor: pointer;
+    }
+    .top-menu ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 26px;
+        text-align: center;
+        margin: 10px 0;
+        position:relative
+    }
+    
+    .top-menu ul li {
+        text-align: center;
+        margin: 10px 0;
+        position: relative;
+    
+    
+    }
+    a.btn-rounded-full.bg-green {
+       
+        padding: 5px 10px;
+        border-radius: 50px;
+    }
+    
+    .top-menu .btn-rounded-full {
+        margin-top: 10px;
+        display: inline-block;
+    }
+    .top-menu ul li.active:before {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: -47%;
+        height: 3px;
+        background-color: #0A993C;
+        width: 50%;
+        transform: translateX(50px);
+    }
+    
+    .bg-green {
+        background-color: #0A993C;
+    }
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 999;
+    }
+    img{
+        max-width: 100%;
+    }
+    
+    .top-menu {
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        bottom: 0;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        transition: .3s;
+    }
+    .mySwiper {
+        border-bottom: 0.3cm solid #0A993C;
+    }
+
+@media (min-width:667px){
+    .text-hero{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 99;
+        color: #fff;
+        text-align: center;
+        transform: translate(-150px, -50px);
+    }
+}
+@media (min-width:768px){
+    .content-popup {
+        width: 25em;
+    }
+    
+    .welcome.seaction_left {
+        margin-bottom: 0;
+        margin-right: 40px;
+    }
+    .welcome.seaction {
+        width: 80%;
+        margin: 125px auto;
+    }
+    .welcome.seaction {
+        width: 650px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hamburger{
+        display:none;
+    }
+    .top-menu ul li {
+        margin: 0 0 0 30px;
+        display: inline-block;
+    }
+    
+    .top-menu {
+        right: 0;
+        position: relative;
+        width: auto;
+        background-color: transparent;
+    }
+    .welcome.seaction_left {
+        margin-bottom: 0;
+        margin-right: 40px;
+    }
+    .hero-hadits {
+        width: 500px;
+        font-size: 14px;
+        margin: -65px auto;
+    }
+    .swiper-slide {
+        height: 500px;
+        background-color: gray;
+        object-fit:cover;
+    }
+    .text-hero{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 99;
+        color: #fff;
+        text-align: center;
+        transform: translate(-180px, -50px);
+    }
+
+
+}
+
+@media (min-width:1024px){
+    .welcome.seaction {
+        width: 890px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .welcome.seaction_left {
+        margin-bottom: 0;
+        margin-right: 40px;
+    }
+    .welcome.seaction {
+        width: 80%;
+        margin: 125px auto;
+    }
+    .welcome.seaction {
+        width: 890px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .welcome.seaction_left {
+        margin-bottom: 0;
+        margin-right: 40px;
+    }
+
+    .hero-hadits img {
+        position: absolute;
+        width: 40px;
+        z-index: 999999;
+    }
+    
+    .hamburger{
+    display:none;
+}
+.top-menu ul li {
+    margin: 0 0 0 30px;
+    display: inline-block;
+}
+
+.top-menu {
+    right: 0;
+    position: relative;
+    width: auto;
+    background-color: transparent;
+}
+}
+@media (min-width:1200px){
+    .welcome.seaction {
+        padding: 60px;
+    }
+
+    
+        .text-hero h2{
+            font-size: 55px;
+        }
+        .text-hero{
+            width: 53%;
+            
+        }
+        .text-hero h6{
+            font-size: 20px;
+            line-height: 24px;
+            width: 600px;
+            margin:0 auto;
+        }
+        .swiper-slide{
+            height: 700px;
+            object-fit: cover;
+        }
+        .container  {
+            max-width: 1140px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .mySwiper {
+            border-bottom: 0.3cm solid #0A993C;
+        }
+        .hamburger{
+            display:none;
+        }
+        .top-menu ul li {
+            margin: 0 0 0 30px;
+            display: inline-block;
+        }
+        
+        .top-menu {
+            right: 0;
+            position: relative;
+            width: auto;
+            background-color: transparent;
+        }
+        
+    
+    
+    
+    }
+
+@media (min-width:1400px){
+        .hamburger{
+    display:none;
+}
+.top-menu ul li {
+    margin: 0 0 0 30px;
+    display: inline-block;
+}
+
+.top-menu {
+    right: 0;
+    position: relative;
+    width: auto;
+    background-color: transparent;
+}
+    .hamburger{
+        display:none;
+    }
+    .top-menu ul li {
+        margin: 0 0 0 30px;
+        display: inline-block;
+    }
+    
+    .top-menu {
+        right: 0;
+        position: relative;
+        width: auto;
+        background-color: transparent;
+    }
+    .swiper-slide{
+        height:900px;
+    }
+.hero-hadits{
+font-size:16px;
+padding:60px 40px;
+width: 600px;
+
+}
+.hero-hadits img {
+
+    width: 60px;
+ 
+}
+
+}
+
+
+
+
+
+
+
