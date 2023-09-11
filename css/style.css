@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body,html{
     overflow-x: hidden;
 }
@@ -14,6 +13,74 @@ body,html{
     min-height: 100vh;
 }
 @media (min-width:320px){
+    p{
+        font-size: 14px;
+    }
+    .text-red {
+        color: #D60000;
+    }
+    
+    .infak-section_left h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .infak-section_left article {
+        margin-bottom: 20px;
+    }
+    
+    .cta-infaK {
+        display: block;
+        width: 100%;
+        background-color: #0A993C;
+        border: none;
+        color: #fff;
+        font-size: 26px;
+        font-weight: 700;
+        padding: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .cta-infaK:hover{
+        transform :scale(1.1);
+    }
+    
+    .infak-section_left {
+        margin-bottom: 30px;
+    }
+    
+    .infak-section_right img {
+        width: 80%;
+    }
+    
+    .infak-section_right img:last-child {
+        margin-left: auto;
+        display: block;
+        margin-top: -35px;
+    }
+    section.infak-sec {
+        padding: 40px 0;
+        background-color: rgba(163, 255, 172, 0.2);
+    }
+
+.wraper-infak-section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.infak-section_left h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+span.small-text {
+    font-size: 20px;
+}
+
+.text-green {
+    color:  #0A993C;
+}
     .outer-video {
         width: 80%;
         margin: 0 auto;
@@ -63,8 +130,6 @@ body,html{
         transform: scale(1);
 
     }
-    
-  
     .content-popup  {
         color: #000;
         position: relative;
@@ -77,9 +142,6 @@ body,html{
         justify-content: space-between;
         align-items: center;
     }
-
-
-   
     button.btn-black {
     background-color: #262626;
     color: #fff;
@@ -127,8 +189,6 @@ img {
         padding: 20px;
     }
     }
-
-    
     p {
         margin-bottom: 15px;
     }
@@ -146,8 +206,6 @@ img {
         width: 50%;
         transform: translateX(50px);
     }
-    
-   
     .hero-hadits {
         background-color: #262626;
         color: #fff;
@@ -232,8 +290,6 @@ img {
         text-align: center;
         margin: 10px 0;
         position: relative;
-    
-    
     }
     a.btn-rounded-full.bg-green {
        
@@ -307,6 +363,17 @@ img {
     }
 }
 @media (min-width:768px){
+    .wraper-infak-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .infak-section_left {
+        width: 50%;
+        padding-right: 20px;
+        flex-shrink: 0;
+    }
     .top-menu ul li.active:before {
         left: -54%;
     }
@@ -365,11 +432,25 @@ img {
         text-align: center;
         transform: translate(-180px, -50px);
     }
-
-
 }
 
 @media (min-width:1024px){
+    p{
+        font-size: 16px;
+    }
+    .infak-section_left h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .small-text {
+        font-size: 25px;
+    }
+    .infak-section_left h2 {
+        font-size: 40px;
+    }
+    .wraper-infak-section {
+        width: 800px;
+    }
     .outer-video {
         width: 700px;
     }
@@ -418,7 +499,6 @@ img {
     margin: 0 0 0 30px;
     display: inline-block;
 }
-
 .top-menu {
     right: 0;
     position: relative;
@@ -427,12 +507,13 @@ img {
 }
 }
 @media (min-width:1200px){
+    .wraper-infak-section {
+        width: 890px;
+    }
     .welcome.seaction {
         padding: 60px;
     }
-
-    
-        .text-hero h2{
+       .text-hero h2{
             font-size: 55px;
         }
         .text-hero{
@@ -463,18 +544,13 @@ img {
         .top-menu ul li {
             margin: 0 0 0 30px;
             display: inline-block;
-        }
-        
+        }        
         .top-menu {
             right: 0;
             position: relative;
             width: auto;
             background-color: transparent;
         }
-        
-    
-    
-    
     }
 
 @media (min-width:1400px){
@@ -520,7 +596,6 @@ width: 600px;
     width: 60px;
  
 }
-
 }
 
 
